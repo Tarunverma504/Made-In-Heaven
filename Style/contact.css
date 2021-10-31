@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: linear-gradient(rgba(252, 252, 252, 0.8),rgba(255, 255, 255, 0.8)),url("https://previews.123rf.com/images/reamolko/reamolko1411/reamolko141100068/33786172-seamless-light-flower-background-pastel-colors-floral-pattern-.jpg");
+}
+.banner{
+    background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url("https://i.pinimg.com/originals/6a/67/50/6a675079ecae24e2629ed3fc1cd276c4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    object-fit: cover;
+    height:80vh;
+    position:relative;
+}
+
+.banner h1{
+    color:white;
+    position:absolute;
+    top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -30%);
+  font-size:9rem;
+  /* font-weight:bold; */
+  font-family: 'Cookie', cursive;
+}
+
+#enqury-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width:1000px;
+    height:auto;
+    margin:20px auto 20px auto;
+    gap:6px;
+    grid-auto-rows: 270px;
+    
+}
+#enqury-container div{
+    border-radius: 5px;
+    width:230px;
+    height:250px;
+    font-family: 'Raleway', sans-serif;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.enquries{
+    background-image:linear-gradient(rgba(252, 252, 252, 0.7),rgba(255, 255, 255, 0.7)),url("https://cdn2.thebridalbox.com/wp-content/uploads/2016/01/wedding-decoration.jpg");
+    background-color: grey;
+    filter:grayscale(100%);
+}
+
+.callus{
+    background-image:linear-gradient(rgba(252, 252, 252, 0.7),rgba(255, 255, 255, 0.7)),url("https://st2.depositphotos.com/4459753/6616/i/600/depositphotos_66162186-stock-photo-beautiful-wedding-set-up.jpg");
+    background-color: grey;
+    filter:grayscale(100%);
+}
+
+.findus{
+    background-image:linear-gradient(rgba(252, 252, 252, 0.7),rgba(255, 255, 255, 0.7)),url("https://images.unsplash.com/photo-1587271636175-90d58cdad458?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwd2VkZGluZyUyMGRlY29yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+    background-color: grey;
+    filter:grayscale(100%);
+}
+
+.jobs{
+    background-image:linear-gradient(rgba(252, 252, 252, 0.7),rgba(255, 255, 255, 0.7)),url("https://i2.wp.com/www.weddingsutra.com/images/planbox-thumb.jpg?fit=700%2C452&ssl=1?%3E");
+    background-color: grey;
+    filter:grayscale(100%);
+}
+
+.enquries:hover{
+    background-image:linear-gradient(rgb(255, 0, 255,0.5),rgb(255, 0, 255,0.5)),url("https://cdn2.thebridalbox.com/wp-content/uploads/2016/01/wedding-decoration.jpg");
+    filter:grayscale(0%);
+    color:white;
+}
+
+
+.callus:hover{
+    background-image:linear-gradient(rgb(255, 0, 255,0.5),rgb(255, 0, 255,0.5)),url("https://st2.depositphotos.com/4459753/6616/i/600/depositphotos_66162186-stock-photo-beautiful-wedding-set-up.jpg");
+
+    filter:grayscale(0%);
+    color:white;
+}
+
+.findus:hover{
+    background-image:linear-gradient(rgb(255, 0, 255,0.5),rgb(255, 0, 255,0.5)),url("https://images.unsplash.com/photo-1587271636175-90d58cdad458?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwd2VkZGluZyUyMGRlY29yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+
+    filter:grayscale(0%);
+    color:white;
+}
+
+.jobs:hover{
+    background-image:linear-gradient(rgb(255, 0, 255,0.5),rgb(255, 0, 255,0.5)),url(" https://i2.wp.com/www.weddingsutra.com/images/planbox-thumb.jpg?fit=700%2C452&ssl=1?%3E");
+
+    filter:grayscale(0%);
+    color:white;
+}
+
+.contact-form{
+    width:1000px;
+    margin: auto;
+}
+
+.form1{
+    width: 900px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 990px) {
+    .banner{
+        height:70vh;
+    }
+    .banner h1{
+        font-size:7rem;
+    }
+    #enqury-container{
+        grid-template-columns: repeat(2,1fr);
+        width:480px;
+    }
+    .contact-form{
+        width:auto;
+    }
+    .form1{
+        width:auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .banner{
+        height:60vh;
+    }
+    .banner h1{
+        font-size:5rem;
+        left: 30%;
+    /* bring your own prefixes */
+    transform: translate(-20%, -30%);
+    }
+}
+@media only screen and (max-width: 550px) {
+    #enqury-container{
+        grid-template-columns: repeat(1,1fr);
+        width:240px;
+    }
+}
