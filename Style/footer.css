@@ -29,6 +29,35 @@ footer{
    
 }
 
+.fixed-icon{
+    width:60px;
+    /* padding:20px; */
+    position:fixed;
+    right:0;
+    top:75vh;
+    z-index:3;
+    background-color: transparent;
+    display: none;
+}
+
+.fixed-icon-div{
+    background-size:contain;
+    object-fit:fill;
+    background-repeat: no-repeat;
+    width:80%;
+    height:55px;
+    margin:auto;
+    cursor:pointer;
+}
+#whatsapp{
+    background-image: url('../assets/whatsapp.png');
+}
+#instragram{
+    background-image: url('../assets/instraram.png');
+}
+#mail{
+    background-image:url('../assets/mail.png');
+}
 
 @media only screen and (max-width: 990px) {
     .outer-div{
@@ -52,5 +81,11 @@ footer{
         width:100%;
         min-width:100px;
        
+    }
+    .fixed-icon{
+        width:50px;
+    }
+    .fixed-icon-div{
+        height:40px;
     }
 }

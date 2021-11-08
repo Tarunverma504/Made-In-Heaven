@@ -302,7 +302,7 @@
             <li>It is requested to make the booking at least 5 days prior to the event date and for wedding at least 15 days prior to the event date.</li>
             <li>The charges might be slightly high on end moment bookings.</li>
             <li>The payment has to be made in three parts: 25% at the time of booking, 50% atlst 2 days prior to the event date and rest 25% on or a day before the event date. </li>
-            <li>Personal information: we ask you to fill you mobile number, mail etc etc for us to contact you and your information is safe etc etc..</li>
+            <li>Personal information: we ask you to fill you mobile number, mail etc  for us to contact you and your information is safe  etc..</li>
           </ul>
         </div>
         <div class="terms-innerdiv2">
@@ -319,7 +319,7 @@
             <div class="inner-div1">
                 <h5 style="color:#ff0a54;font-family: 'Raleway', 'sans-serif;'">Contact Us:</h5>
                 <p>Eamil:<span style="color:rgb(6, 109, 226);"> madeinheaveneventss@gmail.com</span></p>
-                <p>Call us:<span style="color:rgb(6, 109, 226);"> 9998180008, 9724505982</span></p>
+                <p>Call us:<span style="color:rgb(6, 109, 226);"> +91 91633 20720, +91 9836583194 </span></p>
 
                 <h5 style="color:#ff0a54;font-family: 'Raleway', 'sans-serif;'">Office Address:</h5>
                 <p style="color:rgb(6, 109, 226);" >Head Office:<br/>
@@ -370,7 +370,7 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           <div class="modal-items">
                               <h5 style="color:#ff0a54">Plan The Best Day Of Your Life With Only The Best</h5>
-                              <p class="mt-4">Fill the form below to let expert wedding planners make your dream come true.</p>
+                              <p class="mt-4">Fill the form below to let expert event planners make your dream come true.</p>
                               <div class="mb-3">
                                   <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
                                 </div>
@@ -394,12 +394,27 @@
     </div>
 
 
+    <div class="fixed-icon">
+      <div class="fixed-icon-div " id="whatsapp" onclick="location.href='https://web.whatsapp.com/';"></div>
+      <div class="fixed-icon-div" id="instragram"  onclick="location.href='https://instagram.com/madeinheaven.in?utm_medium=copy_link';"></div>
+      <div class="fixed-icon-div" id="mail"  onclick="location.href='mailto:madeinheaveneventss@gmail.com';"></div>
+    </div>
+
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script type="text/javascript">
   $(window).on('load', function() {
       $('#staticBackdrop').modal('show');
   });
+
+  $(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 300) {
+    $('.fixed-icon').fadeIn();
+  } else {
+    $('.fixed-icon').fadeOut();
+  }
+});
 </script>
 </body>
 </html>
