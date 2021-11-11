@@ -252,6 +252,19 @@ ol{
 }
 
 
+.aboutus{
+    width:80%;
+    margin:auto;
+    margin-top: 20px;
+    padding:20px;
+    text-align: center;
+    /* background-color: #2f0aff; */
+}
+
+.aboutus p{
+    font-family: 'Zen Old Mincho', serif; 
+    font-size: 23px;
+}
 
 
 
@@ -312,5 +325,13 @@ ol{
     .services-heading{
         font-size: 40px;
     }
+    .aboutus{
+        width:95%;
+        padding:10px;
+    }
+    .aboutus p{
+        font-size:20px;
+    }
 }
+
 
