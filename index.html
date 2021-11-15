@@ -139,7 +139,91 @@
       </section>
 
 
-      
+      <div style="width:100%; background-color:#ff0a54;height:0.5px;margin:50px auto; "></div>
+
+      <!-- Packages -->
+      <h1 class="services-heading">OUR PACKAGES</h1>
+      <div class="package-outer">
+        <button class="left-scroll-btn " id="slideLeft" ><i class="fas fa-chevron-left"></i></button>
+        <div class="package-container" id="package-container">
+          <div class="package-card">
+            <div class="package-card-header">
+              <img src="./assets/album/wedding.jpg"/>
+            </div>
+            <div class="package-card-body">
+              <h3 style="color:#ff0a54">Wedding</h3>
+              <h4>$800</h4>
+            </div>
+          </div>
+          
+          <div class="package-card">
+            <div class="package-card-header">
+              <img src="./assets/album/r2.jpg"/>
+            </div>
+            <div class="package-card-body">
+              <h3 style="color:#ff0a54">Ring Ceremony</h3>
+              <h4>$800</h4>
+            </div>
+          </div>
+          <div class="package-card">
+            <div class="package-card-header">
+              <img src="./assets/album/a1.jpg"/>
+            </div>
+            <div class="package-card-body">
+              <h3 style="color:#ff0a54">Anniversaries</h3>
+              <h4>$800</h4>
+            </div>
+          </div>
+          <div class="package-card">
+            <div class="package-card-header">
+              <img src="./assets/album/d2.jpg"/>
+            </div>
+            <div class="package-card-body">
+              <h3 style="color:#ff0a54">Date and Proposal</h3>
+              <h4>$800</h4>
+            </div>
+          </div>
+          <div class="package-card">
+            <div class="package-card-header">
+              <img src="./assets/album/s2.jpg"/>
+            </div>
+            <div class="package-card-body">
+              <h3 style="color:#ff0a54">Surprises</h3>
+              <h4>$800</h4>
+            </div>
+          </div>
+          <div class="package-card">
+            <div class="package-card-header">
+              <img src="./assets/album/ro2.jpg"/>
+            </div>
+            <div class="package-card-body">
+              <h3 style="color:#ff0a54">Room decoration</h3>
+              <h4>$800</h4>
+            </div>
+          </div>
+          <div class="package-card">
+            <div class="package-card-header">
+              <img src="./assets/album/b1.jpg"/>
+            </div>
+            <div class="package-card-body">
+              <h3 style="color:#ff0a54">Birthday</h3>
+              <h4>$800</h4>
+            </div>
+          </div>
+          <div class="package-card">
+            <div class="package-card-header">
+              <img src="./assets/album/bs2.jpg"/>
+            </div>
+            <div class="package-card-body">
+              <h3 style="color:#ff0a54">Baby shower</h3>
+              <h4>$800</h4>
+            </div>
+          </div>
+          
+        </div>
+        <button class="right-scroll-btn " id="slideRight"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
 
       <div style="width:100%; background-color:#ff0a54;height:0.5px;margin:50px auto; "></div>
 
@@ -429,6 +513,16 @@
   } else {
     $('.fixed-icon').fadeOut();
   }
+
+  const buttonRight = document.getElementById('slideRight');
+    const buttonLeft = document.getElementById('slideLeft');
+
+    buttonRight.onclick = function () {
+      document.getElementById('package-container').scrollLeft += 300;
+    };
+    buttonLeft.onclick = function () {
+      document.getElementById('package-container').scrollLeft -= 300;
+    };
 });
 </script>
 </body>
