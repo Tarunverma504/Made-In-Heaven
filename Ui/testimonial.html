@@ -253,12 +253,14 @@
   function addReview(){
     event.preventDefault();
     let username=event.target.username.value;
-    let review=event.target.review.value
+    let review=event.target.review.value;
     let obj={
       "name":username,
       "review":review
     }
     arr.push(obj);
+    event.target.username.value="";
+    event.target.review.value="";
     ul.innerHTML="";
 
     for(var i=0;i<arr.length;i++){
