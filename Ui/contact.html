@@ -28,11 +28,15 @@
                 <a class=" nav-links  nav-font"  aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item" >
-                <a class="nav-links nav-font" href="#"> Testimonials</a>
+                <a class="nav-links nav-font" href="../Ui/testimonial.html"> Reviews</a>
               </li>
+
+              <!-- Services navbar -->
               <li class="nav-item" >
                 <a class="nav-links nav-font" href="./services.html">Services</a>
               </li>
+
+              
               <li class="nav-item" >
                 <a class=" active nav-font" href="#">Contact</a>
               </li>
@@ -97,7 +101,7 @@
       <div class="outer-div">
           <div class="inner-div1">
               <h5 style="color:#ff0a54;font-family: 'Raleway', 'sans-serif;'">Contact Us:</h5>
-              <p>Eamil:<span style="color:rgb(6, 109, 226);"> madeinheaveneventss@gmail.com</span></p>
+              <p>Email:<span style="color:rgb(6, 109, 226);"> madeinheaveneventss@gmail.com</span></p>
               <p>Call us:<span style="color:rgb(6, 109, 226);"> +91 91633 20720, +91 9836583194 </span></p>
 
               <h5 style="color:#ff0a54;font-family: 'Raleway', 'sans-serif;'">Office Address:</h5>
@@ -110,18 +114,18 @@
           <div class="inner-div2">
               <h5 style="color:#ff0a54;font-family: 'Raleway', 'sans-serif;'">Plan Your Event with us</h5>
               <p>Fill in the form below to request a call back.</p>
-              <form class="row g-3 mt-4 form2">
+              <form class="row g-3 mt-4 form2" id="contact_Form">
                   <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Full Name" id="inputName">
+                    <input type="text" class="form-control" placeholder="Full Name" name="Full_Name" id="inputName" required>
                   </div>
                   <div class="col-md-6">
-                    <input type="number" class="form-control" placeholder="Contact Number" id="inputPhone">
+                    <input type="number" class="form-control" placeholder="Contact Number" name="Phone" id="inputPhone" required>
                   </div>
                   <div class="col-md-12">
-                      <input type="email" class="form-control" placeholder="Email" id="inputEmail">
+                      <input type="email" class="form-control" placeholder="Email"  name="Email" id="inputEmail" required>
                   </div>
                   <div class="col-12">
-                    <button type="submit" class="btn " style='background-color:#ff0a54;color:white'>SUBMIT</button>
+                    <button type="submit" onclick="contact_SubForm()" class="btn " style='background-color:#ff0a54;color:white'>SUBMIT</button>
                   </div>
                 </form>
           </div>
@@ -197,6 +201,28 @@
     $('.fixed-icon').fadeOut();
   }
 });
+
+
+
+async function contact_SubForm (e){
+    event.preventDefault();
+    // console.log($("#contact_Form").serializeArray());
+    // console.log($("#contact_Form").children);
+     $.ajax({
+      url:"https://api.apispreadsheets.com/data/20863/",
+      type:"post",
+      data:$("#contact_Form").serializeArray(),
+      success: function(){
+        alert("Form Data Submitted :)");
+        location.reload();
+
+      },
+      error: function(){
+        alert("There was an error :(");
+        location.reload();
+      }
+    });
+  }
 </script>
 </body>
 </html>

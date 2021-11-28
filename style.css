@@ -6,7 +6,13 @@
     padding:0;
 }
 body{
-    background-image: linear-gradient(rgba(252, 252, 252, 0.8),rgba(255, 255, 255, 0.8)),url("https://previews.123rf.com/images/reamolko/reamolko1411/reamolko141100068/33786172-seamless-light-flower-background-pastel-colors-floral-pattern-.jpg");
+    /* background-color: #fff; */
+    /* background-image: linear-gradient(rgba(252, 252, 252, 0.8),rgba(255, 255, 255, 0.8)),url("../assets/33786172-seamless-light-flower-background-jkpastel-colors-floral-pattern-.jpg"); */
+    /* background-image: linear-gradient(rgba(252, 252, 252, 0.8),rgba(255, 255, 255, 0.8)),url("https://www.istockphoto.com/photo/beautiful-damask-pattern-of-brown-and-beige-colors-royal-design-with-floral-ornament-gm1262044026-369298993?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fpattern-background&utm_term=pattern%20background%3A%3A%3A"); */
+
+    background-image: url("../assets/33786172-seamless-light-flower-background-jkpastel-colors-floral-pattern-.jpg");
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
 }
 .carousel-item img{
     height:90vh;
@@ -25,7 +31,7 @@ body{
   /* bring your own prefixes */
     transform: translate(-50%, -30%);
     z-index:1;
-    
+    background-color:white;
     width: 250px;
     height:60px;
 
